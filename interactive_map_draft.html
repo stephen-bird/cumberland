@@ -44,7 +44,7 @@
 
 var marker = map.on("contextmenu", function (event) {
     console.log("user right-clicked on map coordinates: " + event.latlng.toString());
-    L.marker(event.latlng,{draggable: true, autoPan: true}).on('dblclick', markerOnClick).addTo(map);
+    L.marker(event.latlng,{draggable: true, autoPan: true, tapTolerance = 30}).on('dblclick', markerOnClick).addTo(map);
   });
   
   
