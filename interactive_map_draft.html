@@ -51,7 +51,7 @@ var marker = map.on("contextmenu", function (event) {
   
 var latlngs = [[54.08138, -102.6285],[54.11171, -102.3001],[53.91637, -102.2489],[53.88617, -102.5758],[54.08138, -102.6285]];
 
-var polyline = L.polyline(latlngs, {color: "red", opacity: 0.5, weight: 1}).addTo(map);
+var polyline = L.polyline(latlngs, {color: "red", opacity: 0.5, weight: 1, tapTolerance = 30}).addTo(map);
 
     L.control.scale().addTo(map);
     
